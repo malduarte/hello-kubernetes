@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Step $l"
+cmd=`cat demo.sh | sed -ne ${l}p`
+echo $cmd
+((l=l+1))
